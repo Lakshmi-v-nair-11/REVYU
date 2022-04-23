@@ -1,0 +1,39 @@
+.shaping{
+    position: absolute;
+    width: 1368px;
+    height: 768px;
+    left: -2px;
+    top: 0px;
+    background: rgba(255, 157, 1, 0.07);
+    z-index: index -1;
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 8em;
+
+        a {
+            color: black;
+            padding: .75em 2em;
+            display: block;
+
+            &:hover {
+                background: rgb(235, 235, 235);
+            }
+        }
+    }
+}
